@@ -14,4 +14,6 @@ Streamlit to make my dashboard, Docker & Heroku to deploy the app on the web...
 
 You'll need to have 3 .py files in order to be able to run your Scrapy spiders (due to multhreading issues with Streamlit).
 
+'config.toml'  file is the streamlit configuration file
+
 The web app link : https://mru-app.herokuapp.com/
