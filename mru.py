@@ -307,6 +307,8 @@ def hotel_data():
     datahotel =pd.read_json('src/All_Booking_mru.json')
     return datahotel
 
+datahotel = hotel_data()
+
 
 #let's scrap the hotel gps data with scrapy on booking.com
 #due to multithread issue with streamlit we have to use 'os' module
@@ -369,6 +371,8 @@ def load_data():
     datahotelgps =pd.read_json('src/hotel_coord_mru.json')
     
     return datahotelgps
+
+datahotelgps = load_dataA()
 
 #let's put all datas in one well formatted df:
 @st.cache (allow_output_mutation=True)
