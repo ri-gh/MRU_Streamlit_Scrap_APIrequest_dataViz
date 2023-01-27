@@ -312,7 +312,7 @@ def hotel_data():
 #due to multithread issue with streamlit we have to use 'os' module
 #to put signal on the main thread
 @st.cache
-def a = pd.read_json('src/All_Booking_mru.json')
+a = pd.read_json('src/All_Booking_mru.json')
 all_details = pd.DataFrame(a)
 list_of_urls = []
 for url in (all_details['url']):
